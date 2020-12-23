@@ -1,7 +1,7 @@
 1.下载docker镜像（tf1.x为例）
 docker pull nvcr.io/nvidia/tensorflow:20.12-tf1-py3
 2.使用镜像实例化容器
-nvidia-docker run -it -v hxl_docker:/docker_root --name hxl_tf1.15_python3.8  -p 1002:22    c8515d0efd50
+nvidia-docker run -it -v /home/haoxl/hxl_docker:/docker_root --name hxl_tf1.15_python3.8  -p 1002:22    c8515d0efd50
 3.初始化容器
 apt update && apt install openssh-server -y
 echo 'root:test' | chpasswd
